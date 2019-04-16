@@ -38,4 +38,5 @@ void loop(){
 		digitalWrite(pinVermelho, HIGH);
 		digitalWrite(pinAmarelo, LOW);
 	}
+	delay(100);
 }
