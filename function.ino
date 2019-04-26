@@ -7,13 +7,13 @@ boolean pisca = false;
 boolean leBotao(int porta);
 void piscaLED (int porta, int tempo);
 
-void setup(){
+void loop(){
 	pinMode(pinLedVd, OUTPUT);
 	pinMode(pinLedVm, OUTPUT);
 	pinMode(pinBotao, INPUT_PULLUP);
 }
 
-void loop(){
+void setup(){
 	if(leBotao(pinBotao)){
 		pisca = !pisca;
 	}
